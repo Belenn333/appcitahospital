@@ -7,11 +7,11 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "Pacientes")
+@Table(name = "pacientes")
 public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer pacienteid;
+    private Integer idpaciente;
 
     @Column(name = "nombre")
     private String nombre;

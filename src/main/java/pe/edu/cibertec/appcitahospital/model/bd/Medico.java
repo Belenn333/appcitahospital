@@ -4,11 +4,11 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "Medicos")
+@Table(name = "medicos")
 public class Medico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer medicoid;
+    private Integer idmedico;
 
     @Column(name = "nombre")
     private String nombre;

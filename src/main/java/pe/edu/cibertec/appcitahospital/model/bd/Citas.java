@@ -6,11 +6,11 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "Citas")
+@Table(name = "citas")
 public class Citas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer citaid;
+    private Integer idcita;
 
     @Column(name = "fechacita")
     private Date fechacita;
@@ -22,10 +22,10 @@ public class Citas {
     private String estadocita;
 
     @ManyToOne
-    @JoinColumn(name = "medicoid")
+    @JoinColumn(name = "idmedico")
     private Medico medico;
 
     @ManyToOne
-    @JoinColumn(name = "pacienteid")
+    @JoinColumn(name = "idpaciente")
     private Paciente paciente;
 }
